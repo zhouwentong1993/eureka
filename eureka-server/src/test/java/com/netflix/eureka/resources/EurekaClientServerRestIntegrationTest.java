@@ -211,7 +211,7 @@ public class EurekaClientServerRestIntegrationTest {
      */
     private static void injectEurekaConfiguration() throws UnknownHostException {
         String myHostName = InetAddress.getLocalHost().getHostName();
-        String myServiceUrl = "http://" + myHostName + ":8080/v2/";
+        String myServiceUrl = "http://localhost:8080/v2/";
 
         System.setProperty("eureka.region", "default");
         System.setProperty("eureka.name", "eureka");
